@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Zingen Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="container padding-eixo-y-base">
+      <nav class="flex items-center gap-1.5">
+        <a href="#">
+          <img src="assets/icons/zingen.svg" alt="Logo Zingen">
+        </a>
+        <a href="#about" class="desktop-only">Get to know the app</a>
+        <a href="#features" class="desktop-only">Features</a>
+        <a href="#pricing" class="desktop-only">Plans and Prices</a>
+        <a href="#download" class="btn btn-sm">Download now</a>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="container padding-eixo-y-xl">
+      <img src="assets/music-bars.svg">
+      <h1>Singing chases away your troubles.</h1>
+      <p>Singing has never been so easy.</p>
+    </div>
+
+    <div class="buttons flex items-center gap-1">
+      <a href="#pricing" aria-label="Ver planos" class="btn btn-md"></a>
+      <a href="#download" class="btn btn-md">Download now</a>
+
+    </div>
+  </section>
+
+  <section id="smartphones-img">
+    <div class="container">
+      <img src="assets/smartphones.png">
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container even-columns padding-eixo-y-xl items-center">
+      <div>
+        <header>
+          <strong>Get to know the App</strong>
+          <h2>The perfect app for learning to sing.</h2>
+          <p>Our Artificial Intelligence algorithm allows you to remove the original vocals while keeping the melodies
+            of the songs.
+            This way, we have the largest musical repertoire for Karaoke! In addition, when you sing, your voice and
+            pitch are compared by the algorithm, allowing for an accurate assessment of your performance and helping you
+            improve your singing.
+          </p>
+        </header>
+      </div>
+      <div>
+        <img class="desktop-only" src="assets/smartphones.png">
+      </div>
+    </div>
+  </section>
+  <section id="features">
+    <div class="cards container padding-eixo-y-xl grid gap-1.5">
+      <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+        <img src="assets/icons/magicWand.svg">
+        <h3>The largest library of karaoke songs!</h3>
+        <p>Our AI removes the vocals from any song and makes it ready to sing along to, like magic!</p>
+      </div>
+
+      <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+        <div>
+          <img src="assets/icons/gameController.svg" alt="" />
+          <h3>Gamified experience</h3>
+          <p>
+            Your performance is scored according to our ultra-precise algorithm.
+            Challenge yourself, gain recognition, and celebrate your progress!
+          </p>
+        </div>
+        <img class="desktop-only" src="assets/screen-2.png" alt="" />
+      </div>
+
+      <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+        <div>
+          <img src="assets/icons/microphoneStage.svg" alt="" />
+          <h3>Record your performances.</h3>
+          <p>
+            Whether you want to share with friends or track your progress, our audio and video recording feature lets
+            you get the most out of the experience!
+          </p>
+        </div>
+      </div>
+      <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+        <div>
+          <img src="assets/icons/usersThree.svg" alt="" />
+          <h3>Share with the community</h3>
+          <p>
+            Share your recordings with the community, interact, and explore other people's vocal performances in your
+            feed!
+          </p>
+        </div>
+        <img class="desktop-only" src="assets/screen-1.png" alt="" />
+      </div>
+
+      <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+        <div>
+          <img src="assets/icons/musicNotes.svg" alt="" />
+          <h3>Letras em tempo-real</h3>
+          <p>
+            Never miss a beat with synchronized lyrics displayed in real time. You can also activate the original vocals
+            for added help.
+          </p>
+        </div>
+        <img class="desktop-only" src="assets/screen-3.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <section id="pricing">
+    <div class="container padding-eixo-y-xl">
+      <header>
+        <strong>Plans and Prices</strong>
+        <h2>Subscribe and get unlimited access to all features.</h2>
+      </header>
+
+      <div class="cards even-columns items-center">
+        <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+          <h3>Basic</h3>
+          <p>Download the app and start singing right now!</p>
+          <zin-pricing>Free</zin-pricing>
+          <a href="#download" class="btn btn-md" aria-label="Baixar agora"></a>
+          <div class="separator"></div>
+          <ul role="list" class="grid gap-1">
+            <li>With ads</li>
+            <li>Up to 5 songs per day</li>
+            <li>Sing only the songs available in the free plan.</li>
+          </ul>
+        </div>
+
+        <div class="premium">
+          <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+            <span>1 month free</span>
+            <h3>Premium</h3>
+            <p>Ideal for those who are tired of embarrassing themselves at karaoke.</p>
+            <zin-pricing>CAD 24.90 <small>/mês</small></zin-pricing>
+            <a href="#" class="btn btn-md">Free trail</a>
+            <div class="separator"></div>
+            <ul role="list" class="grid gap-1">
+              <li>No ad interruptions</li>
+              <li>Sing as many songs as you want.</li>
+              <li>Sing all the songs from the library.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card padding-eixo-y-lg padding-eixo-x-lg">
+          <h3>Family</h3>
+          <p>For those families who love to get together to sing.</p>
+          <zin-pricing>CAD 21.90 <small>/month per person</small></zin-pricing>
+          <a href="#" class="btn btn-md" aria-label="Subscribe now"></a>
+          <div class="separator"></div>
+          <ul role="list" class="grid gap-1">
+            <li>No ad interruptions</li>
+            <li>Sing as many songs as you want.</li>
+            <li>Sing all the songs from the library.</li>
+          </ul>
+
+          <small>Minimum of 4 people on the family plan.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="download">
+    <div class="container padding-eixo-y-xl">
+      <div class="card px-lg even-columns items-center">
+        <div>
+          <header>
+            <strong>Download</strong>
+            <h2>Let's sing?</h2>
+          </header>
+          <p>
+            Unleash your star potential, unleash your voice, and become part of the most engaging musical community.
+            Download Zingen now and transform your performances into unforgettable experiences!
+          </p>
+
+          <div class="buttons flex gap-1">
+            <a href="#"><img src="assets/icons/appstore-button.svg" alt="Download Apple Store" /></a>
+            <a href="#"><img src="assets/icons/playStore-button.svg" alt="Download Play Store" /></a>
+          </div>
+        </div>
+
+        <img src="assets/listening-music.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container padding-eixo-y-xl grid">
+      <section class="grid top">
+        <img src="assets/icons/zingen.svg" alt="" />
+
+        <nav class="even-columns">
+          <ul role="list" class="grid gap-1.5">
+            <li class="title">Products</li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Plans and Prices</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+
+          <ul role="list" class="grid gap-1.5">
+            <li class="title">Company</li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#">Work with us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+
+          <ul role="list" class="grid gap-1.5">
+            <li class="title">Legal</li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="bottom flex gap-1.5">
+        <div class="flex gap-1 5">
+          <a href="#" class="social" aria-label="tiktok"></a>
+          <a href="#" class="social" aria-label="instagram"></a>
+          <a href="#" class="social" aria-label="twitter"></a>
+          <a href="#" class="social" aria-label="discord"></a>
+        </div>
+        <span class="copy">©2024 Zingen Technologies, Inc.</span>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
+</body>
+
+</html>

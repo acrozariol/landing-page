@@ -1,0 +1,79 @@
+.btn {
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--bg-color);
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content; /*se encaixa conforme o conteúdo*/
+  border-radius: 0.5rem;
+  font: var(--font-weight-medium) var(--font-size-base-md) / 1.5rem
+    var(--font-family);
+  cursor: pointer; /*vira a maozinha do mickey quando fica perto do botao*/
+  background: var(--btn-bg-color);
+  color: var(--btn-color); /*cor da letra do botao*/
+}
+
+.btn:hover {
+  --btn-bg-color: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
+  --btn-color: var(--surface-color);
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--btn-color);
+}
+
+.btn-sm {
+  font-size: var(font-size-sl);
+  padding: 0.5rem 1rem;
+}
+
+.btn-md {
+  font-size: var(--font-size-base-md);
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-lg {
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+}
+
+.btn[aria-label] {
+  position: relative; /* Permite posicionar pseudo-elementos em relação ao botão */
+
+  &::before {
+    content: ""; /* Cria um pseudo-elemento vazio */
+    position: absolute; /* Posiciona em relação ao .btn */
+    border-radius: inherit; /* Usa o mesmo border-radius do botão */
+    inset: 1px; /* Define uma margem interna (funciona como uma borda) */
+    background-color: var(--bg-color); /* Cor de fundo “interna” do botão */
+  }
+
+  &::after {
+    content: attr(aria-label); /* Usa o texto do aria-label como conteúdo */
+    background: var(
+      --btn-bg-color
+    ); /* Define o gradiente ou cor de fundo para o texto */
+    -webkit-background-clip: text; /* Faz o fundo aplicar-se apenas ao texto (Safari/Chrome) */
+    background-clip: text; /* Mesmo que acima, mas padrão */
+    color: transparent; /* Deixa o texto transparente para revelar o background-clip */
+    position: relative; /* Mantém o texto acima do ::before */
+    z-index: 1; /* Garante que o texto fique na frente do pseudo-elemento ::before */
+  }
+}
+
+@media (width >= 80em) {
+  .btn-sm {
+    font-size: var(--font-size-base-md);
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-md {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}

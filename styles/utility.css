@@ -1,0 +1,66 @@
+.container {
+  --max-width: 375px; /*tamanho máximo do MOBILE*/
+  width: min(var(--max-width), 100% - var(--padding-eixo-x-lg) * 2);
+  margin-inline: auto;
+  /* border: solid violet; */
+}
+
+.desktop-only {
+  display: none; /*quer dizer que quando for mobile first, nao vai aparecer nada sobre o desktop, vai desparecer o conteúdo desktop*/
+}
+
+.padding-eixo-y-base {
+  padding-block: var(--padding-eixo-y-base); /*padding em cima e em baixo*/
+}
+
+.padding-eixo-x-lg {
+  padding-inline: var(--padding-eixo-x-lg); /*padding em cima e em baixo*/
+}
+
+.padding-eixo-y-lg {
+  padding-block: var(--padding-eixo-y-lg); /*padding em cima e em baixo*/
+}
+
+.padding-eixo-y-xl {
+  padding-block: var(--padding-eixo-y-xl); /*padding em cima e em baixo*/
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem; /*tamanho do DESKTOP*/
+  }
+
+  .desktop-only {
+    display: initial; /*quando estiver ativo o desktop, o display dele vai ser o mesmo do inicio*/
+  }
+
+  .even-columns {
+    grid-auto-flow: column; /*em DESKTOP, se encaixa o conteudo um do lado do outro, e MOBILE um embaixo do outro*/
+    grid-auto-columns: 1fr;
+  }
+}
+
+.even-columns {
+  display: grid; /*cria conteudo um embaixo do outro, usado pro MOBILE, pros textos como h1/h2 caberem na tela*/
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
+}
