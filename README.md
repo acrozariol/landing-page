@@ -1,8 +1,8 @@
-# 🎤 Zingen - Karaoke Landing Page
+# Zingen - Karaoke Landing Page
 
 A responsive landing page for a fictional karaoke application called **Zingen**, built to practice modern front-end development concepts and responsive layouts.
 
-## 🚀 Technologies
+## Technologies
 
 - HTML5
 - CSS3
@@ -11,7 +11,7 @@ A responsive landing page for a fictional karaoke application called **Zingen**,
 - Responsive Design
 - SVG Icons
 
-## ✨ Features
+## Features
 
 - Responsive layout for desktop and mobile
 - Feature cards with illustrations
@@ -19,6 +19,6 @@ A responsive landing page for a fictional karaoke application called **Zingen**,
 - Download section for App Store and Google Play
 - Navigation menu and footer with social media links
 
-## 📄 License
+## License
 
 This project was developed for educational purposes.
